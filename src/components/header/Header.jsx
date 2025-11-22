@@ -2,7 +2,7 @@ import React from 'react'
 
 function Header() {
   return (
-      <header className=''>
+      <header className='fixed top-0 left-0 w-full bg-white shadow z-[999999]'>
           <div className="container mx-auto px-[20px] py-[10px]  flex justify-around items-center">
 
              
