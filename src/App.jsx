@@ -55,14 +55,14 @@ function App() {
                             </h1>
                         </div>
 
-                        <div className="grid grid-cols-2  px-5 mt-8 ">
+                        <div className="flex justify-center items-center gap-[20px]   grid  md:grid-cols-2  px-[30px] mt-8 ">
                             <div className="">
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/lEdyDNcCQaQ?si=pQ39zdnJ8KzlbUDh&amp;start=3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
 
                             <div className="">
 
-                                <p>
+                                <p className="px-[10px]">
                                     Компания ООО «ЛеанГрупп» начала свою деятельность в 1999 году и на сегодняшний день является ведущей компанией по производству ламинатных и экструзионных туб.
                                     <br />
                                     <br />
@@ -115,7 +115,7 @@ function App() {
                             <Praduct btn="Другая упаковка" />
                         </div>
 
-                        <div className="grid grid-cols-4 mt-[20px] px-[10px] ">
+                        <div className="flex justify-center items-center  grid  px-[20px] md:grid-cols-4 mt-[20px] px-[10px] ">
                             <Praducts img="/public/imgs/img1.png" />
                             <Praducts img="/public/imgs/img2.png" />
                             <Praducts img="/public/imgs/img3.png" />
@@ -192,7 +192,7 @@ function App() {
                                 команда
                             </h1>
                         </div>
-                        <div className="grid grid-cols-5 gap-[10px] px-[20px] ">
+                        <div className="grid justify-center items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-[10px] px-[20px] ">
 
                             <Carta 
                                 img="/imgs/person1.png"

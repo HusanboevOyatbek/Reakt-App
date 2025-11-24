@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaMoon } from "react-icons/fa";
 import { MdWbSunny } from "react-icons/md";
+import { toast } from "react-toastify";
 
 function Header() {
     const [dark, setDark] = useState(false)
@@ -8,17 +9,20 @@ function Header() {
     function changeMode() {
         document.documentElement.classList.toggle("dark");
         setDark(!dark)
+        toast(` ${dark ? "☀️Kungi rejimga" : "🌙Tungi rejimga"} o'zgardi` , {
+        position:"top-left"
+        })
     }
 
     return (
-        <header className='fixed top-0 left-0 w-full bg-white dark:bg-[grey]/90 dark:text-white shadow  z-[999999]'>
+        <header className='fixed top-0 left-0 w-full bg-white dark:bg-[grey]/90 dark:text-white shadow  z-[9999]'>
             <div className="container mx-auto px-[20px] py-[10px] flex justify-around items-center">
 
                 <a href="" className="">
                     <img className='max-w-[122px] w-full' src="/public/imgs/logo.png" alt="" />
                 </a>
 
-                <ul className='flex gap-[10px]'>
+                <ul className='lg:flex gap-[10px] hidden'>
                     <li className='pr-4 border-r border-gray-300 dark:border-gray-600 hover:text-[#EF7C00] font-bold duration-300 '>
                         <a href="">Продукция</a>
                     </li>
