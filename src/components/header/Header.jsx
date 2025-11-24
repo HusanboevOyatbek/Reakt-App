@@ -15,7 +15,7 @@ function Header() {
     }
 
     return (
-        <header className='fixed top-0 left-0 w-full bg-white dark:bg-[grey]/90 dark:text-white shadow  z-[9999]'>
+        <header className='fixed top-0 left-0 w-full bg-white dark:bg-[grey]/90 dark:text-white shadow py-[20px] z-[9999]'>
             <div className="container mx-auto px-[20px] py-[10px] flex justify-around items-center">
 
                 <a href="" className="">
