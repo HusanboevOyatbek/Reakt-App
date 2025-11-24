@@ -8,11 +8,12 @@ import Carta from "./components/cardts/carta";
 import Yangilik from "./components/yangiliklar/Yangilik";
 
 
+
 function App() {
     return (
         <Fragment>
             <Header />
-            <main className="">
+            <main className="dark:bg-gray-700 dark:text-white pt-[90px]">
                 <section>
 
                     <div className="container mx-auto flex relative">
@@ -46,7 +47,7 @@ function App() {
                     <div className="container mx-auto px-5 ">
 
                         <div className="flex gap-2 justify-center">
-                            <h1 className="font-bold text-3xl text-[#2C2D2E] ">
+                            <h1 className="font-bold dark:text-white text-3xl text-[#2C2D2E] ">
                                 О компании
                             </h1>
                             <h1 className="font-bold text-3xl text-[#EF7C00]  ">
@@ -80,7 +81,7 @@ function App() {
 
 
                         <div className="flex gap-2.5 justify-center">
-                            <h1 className="font-bold text-3xl text-[#2C2D2E]">
+                            <h1 className="font-bold  dark:text-white text-3xl text-[#2C2D2E]">
                                 Качество продукции подтверждают
                             </h1>
                             <h1 className="font-bold text-3xl text-[#EF7C00]">
@@ -99,7 +100,7 @@ function App() {
                     <div className="container mx-auto  ">
 
                         <div className="flex gap-2.5 justify-center">
-                            <h1 className="font-bold text-3xl text-[#2C2D2E]">
+                            <h1 className="font-bold  dark:text-white text-3xl text-[#2C2D2E]">
                                 Наша
                             </h1>
                             <h1 className="font-bold text-3xl text-[#EF7C00]">
@@ -138,7 +139,7 @@ function App() {
                     <div className="container mx-auto">
                         <div className=" shadow-gray-500 rounded-[20px]">
                             <div className="flex gap-2.5 justify-center">
-                                <h1 className="font-bold text-3xl text-[#2C2D2E]">
+                                <h1 className="font-bold   text-3xl text-[grey]">
                                     Получить подробную
                                 </h1>
                                 <h1 className="font-bold text-3xl text-[#EF7C00]">
@@ -146,13 +147,13 @@ function App() {
                                 </h1>
                             </div>
 
-                            <div className="mt-[100px]">
+                            <div className="mt-[100px] dark:text-[grey]">
                                 <p className="text-[15px] font-bold">
                                     Просто заполните форму, наш менеджер свяжется <br />
                                     вами в ближайшее время
                                 </p>
 
-                                <form className="flex flex-col gap-4 max-w-[500px] mt-[30px]">
+                                <form className="flex flex-col gap-4 max-w-[500px] mt-[30px] dark:text-[black]">
 
                                     <div className="flex gap-4">
                                         <input
@@ -184,7 +185,7 @@ function App() {
                     <div className="container mx-auto">
 
                         <div className="flex gap-2.5 justify-center">
-                            <h1 className="font-bold text-3xl text-[#2C2D2E]">
+                            <h1 className="font-bold text-3xl  dark:text-white text-[#2C2D2E]">
                                 Наша
                             </h1>
                             <h1 className="font-bold text-3xl text-[#EF7C00]">
@@ -193,7 +194,7 @@ function App() {
                         </div>
                         <div className="grid grid-cols-5 gap-[10px] px-[20px] ">
 
-                            <Carta
+                            <Carta 
                                 img="/imgs/person1.png"
                                 name="Войнич Дарья"
                                 description="Заместитель директора по продажам"
@@ -249,7 +250,7 @@ function App() {
 
                 <section>
                     <div className="container mx-auto">
-                        <h1 className="text-[#2C2D2E] text-4xl font-bold flex justify-center ">
+                        <h1 className="text-[#2C2D2E]  dark:text-white text-4xl font-bold flex justify-center ">
                             Новости
                         </h1>
 

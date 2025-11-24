@@ -1,4 +1,6 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
 /* O'chib ketmasin */
 
 
@@ -58,5 +60,9 @@
 
 button{
     cursor: pointer;
+}
+
+.dark button {
+    color: white;
 }
 
